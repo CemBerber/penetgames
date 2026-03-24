@@ -44,7 +44,21 @@
             border: 1px solid #444;
         }
         .game-card:hover { transform: translateY(-10px); }
-        .game-card h2 { color: var(--primary-color); }
+        .game-card h2 { color: var(--primary-color); font-size: 1.5rem; }
+        
+        /* Support Section Styling - Apple needs this to be clear */
+        .support-section {
+            margin-top: 40px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            width: 85%;
+            max-width: 600px;
+            text-align: center;
+            border: 2px solid var(--primary-color);
+        }
+        .support-section h3 { color: var(--primary-color); margin-top: 0; font-size: 1.8rem; }
+        .support-email { font-size: 1.2rem; font-weight: bold; color: #fff; }
         
         .links {
             margin-top: 50px;
@@ -67,22 +81,30 @@
 
 <div class="container">
     <div class="game-card">
+        <h2> Last Bounce: Zombie Defense</h2>
+        <p>Defend your base against waves of zombies in this action-packed game.</p>
+        <a href="#">Coming Soon to App Store</a>
+    </div>
+
+    <div class="game-card">
         <h2>Anime Girls vs Zombies</h2>
         <p>A fun experience on your mobile device.</p>
-        <a href="#">you can get from Play Store</a>
+        <a href="https://play.google.com/store" target="_blank">Get it from Play Store</a>
     </div>
 
     <div class="game-card">
-        <h2>🧟 Zombie Defense</h2>
-        <p>Defend your base against waves of zombies in this action-packed game.</p>
-        <a href="#">Coming Soon to Play Store</a>
-    </div>
-
-    <div class="game-card">
-        <h2>🎮 New Project</h2>
+        <h2> New Project</h2>
         <p>Exciting new mobile gaming projects are currently under development.</p>
         <p><i>Stay tuned!</i></p>
     </div>
+</div>
+
+<div class="support-section" id="support">
+    <h3>Support & Contact</h3>
+    <p>Having issues or have a question about our games? We are here to help!</p>
+    <p>Please contact us at:</p>
+    <p class="support-email"><a href="mailto:imcemberber@gmail.com">imcemberber@gmail.com</a></p>
+    <p><small>Our support team will get back to you within 24-48 hours.</small></p>
 </div>
 
 <div class="links">
@@ -92,4 +114,4 @@
 </div>
 
 </body>
-</html>Penet Games
+</html>
